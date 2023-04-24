@@ -14,7 +14,9 @@ function findTargetFOrDoubles(arr, target) {
 let arr =[2.5, 7.5, 11.2, 15.1]
 let target = 10.0
 console.log(findTargetFOrDoubles(arr, target));
-
+arr = [2.5, 7.5, 11.2, 15.1, 1.5]
+target = 12.7
+console.log(findTargetFOrDoubles(arr, target));
 /*
 
 Write a function that returns the sum of the indices of 2 numbers from array nums that add up to the floating-point number target.
