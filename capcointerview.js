@@ -1,22 +1,22 @@
-function findTargetFOrDoubles(arr, target) {
+function findTargetForDoubles(arr, target) {
   let map = new Map();
   for (let i = 0; i<arr.length; ++i) {
     let diff = target - arr[i];
-    console.log(diff)
+    // console.log(diff)
     if (map.has(diff)) {
       return map.get(diff) + i;
     }
     map.set(arr[i], i);
-    console.log("getdiff", diff, map.get(diff));
+    // console.log("getdiff", diff, map.get(diff));
   }
 }
 
 let arr =[2.5, 7.5, 11.2, 15.1]
 let target = 10.0
-console.log(findTargetFOrDoubles(arr, target));
+console.log(findTargetForDoubles(arr, target));
 arr = [2.5, 7.5, 11.2, 15.1, 1.5]
 target = 12.7
-console.log(findTargetFOrDoubles(arr, target));
+console.log(findTargetForDoubles(arr, target));
 /*
 
 Write a function that returns the sum of the indices of 2 numbers from array nums that add up to the floating-point number target.
